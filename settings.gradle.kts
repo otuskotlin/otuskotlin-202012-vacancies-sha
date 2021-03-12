@@ -32,4 +32,6 @@ pluginManagement {
 }
 
 include("common-be")
-include("common")
+include("common-multi")
+include("transport-multi")
+include("mapper")
