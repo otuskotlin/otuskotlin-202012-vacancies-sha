@@ -8,8 +8,8 @@ import ru.otus.vacancies.transport.common.IMpRq
 
 @Serializable
 data class CreateVacancyRq(
-    override val rqUid: String?,
-    override val rqTm: String?,
+    override val rqUid: String? = null,
+    override val rqTm: String? = null,
     val title: String,
     val specialization: String? = null,
     val cityName: CityNameDto? = null,

@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 enum class ExperienceDto {
-    NONE,
+    LESS_THAN_ONE,
     ONE_TO_THREE,
     THREE_TO_SIX,
     MORE_THAN_SIX

@@ -7,10 +7,10 @@ import ru.otus.vacancies.transport.common.RsStatus
 
 @Serializable
 data class GetVacancyRs(
-    override val rqUid: String,
-    override val rsUid: String,
-    override val rsTm: String,
-    override val status: RsStatus,
-    override val errors: List<RsError> = emptyList(),
-    val vacancies: List<VacancyDto> = emptyList()
+    override val rqUid: String? = null,
+    override val rsUid: String? = null,
+    override val rsTm: String? = null,
+    override val status: RsStatus? = null,
+    override val errors: List<RsError>? = null,
+    val vacancies: List<VacancyDto>? = null
 ) : IMpRs

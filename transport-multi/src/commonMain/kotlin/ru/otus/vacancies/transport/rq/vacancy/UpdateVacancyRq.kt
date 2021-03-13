@@ -8,15 +8,15 @@ import ru.otus.vacancies.transport.common.IMpRq
 
 @Serializable
 data class UpdateVacancyRq(
-    override val rqUid: String?,
-    override val rqTm: String?,
+    override val rqUid: String? = null,
+    override val rqTm: String? = null,
     val id: String,
-    val title: String?,
-    val specialization: String?,
-    val city: CityDto?,
-    val salary: String?,
-    val description: String?,
-    val experience: ExperienceDto?,
-    val schedule: ScheduleDto?,
-    val manager: String?
+    val title: String? = null,
+    val specialization: String? = null,
+    val cityName: CityNameDto? = null,
+    val salary: String? = null,
+    val description: String? = null,
+    val experience: ExperienceDto? = null,
+    val schedule: ScheduleDto? = null,
+    val manager: String? = null
 ) : IMpRq
