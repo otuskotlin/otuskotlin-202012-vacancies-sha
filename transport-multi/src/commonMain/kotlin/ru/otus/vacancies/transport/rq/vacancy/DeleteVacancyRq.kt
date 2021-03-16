@@ -5,7 +5,7 @@ import ru.otus.vacancies.transport.common.IMpRq
 
 @Serializable
 data class DeleteVacancyRq(
-    override val rqUid: String,
-    override val rqTm: String,
-    val id: List<String>
+    override val rqUid: String? = null,
+    override val rqTm: String? = null,
+    val ids: List<String>
 ) : IMpRq

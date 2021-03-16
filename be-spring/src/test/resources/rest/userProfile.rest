@@ -1,0 +1,44 @@
+POST http://localhost:8080/userProfile/get
+Content-Type: application/json
+
+{
+  "ids": [
+    "1",
+    "2",
+    "3"
+  ]
+}
+
+###
+POST http://localhost:8080/userProfile/create
+Content-Type: application/json
+
+{
+  "email": "who@gmail.com",
+  "name": "someone",
+  "specialization": "DevOps"
+}
+
+###
+POST http://localhost:8080/userProfile/update
+Content-Type: application/json
+
+{
+  "id": "1",
+  "email": "who@gmail.com",
+  "name": "someone",
+  "specialization": "DevOps",
+  "rqUid": "321"
+}
+
+###
+POST http://localhost:8080/userProfile/delete
+Content-Type: application/json
+
+{
+  "ids": [
+    "876"
+  ]
+}
+
+###

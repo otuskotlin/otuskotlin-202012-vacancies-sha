@@ -1,0 +1,39 @@
+POST http://localhost:8080/vacancy/get
+Content-Type: application/json
+
+{
+  "ids": [
+    "1",
+    "10"
+  ]
+}
+
+###
+POST http://localhost:8080/vacancy/create
+Content-Type: application/json
+
+{
+  "title": "Senior Kotlin developer"
+}
+
+###
+POST http://localhost:8080/vacancy/update
+Content-Type: application/json
+
+{
+  "id": "1",
+  "rqUid": "123"
+}
+
+###
+POST http://localhost:8080/vacancy/delete
+Content-Type: application/json
+
+{
+  "ids": [
+    "3",
+    "4"
+  ]
+}
+
+###

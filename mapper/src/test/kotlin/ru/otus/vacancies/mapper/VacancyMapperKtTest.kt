@@ -16,7 +16,7 @@ class VacancyMapperKtTest {
             experience = ExperienceDto.MORE_THAN_SIX
         )
         val model = dto.mapToModel()
-        assertEquals(model.experience?.name, dto.experience?.name)
+        assertEquals(model.experience.name, dto.experience?.name)
     }
 
     @Test

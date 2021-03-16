@@ -7,8 +7,8 @@ import ru.otus.vacancies.transport.ScheduleDto
 
 @Serializable
 data class VacancyDto(
-    val id: String,
-    val title: String,
+    val id: String? = null,
+    val title: String? = null,
     val specialization: String? = null,
     val cityName: CityNameDto? = null,
     val salary: String? = null,
